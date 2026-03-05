@@ -1,0 +1,61 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Atelier Details</h2>
+        <a routerLink="/atelier" class="btn btn-secondary">Back to List</a>
+      </div>
+
+      <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ errorMessage }}
+      </div>
+
+      <div *ngIf="isLoading" class="text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <div *ngIf="!isLoading && atelier" class="card">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0">{{ atelier.nom }}</h5>
+        </div>
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <h6 class="text-muted">ID</h6>
+              <p class="h6">{{ atelier.id }}</p>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-muted">Status</h6>
+              <p>
+                <span [class]="'badge ' + getStatutBadge(atelier.statut)">
+                  {{ getStatutText(atelier.statut) }}
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <h6 class="text-muted">Instructor Email</h6>
+              <p class="h6">{{ atelier.emailFormateur }}</p>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-muted">Number of Participants</h6>
+              <p class="h6">{{ atelier.nbrParticipant }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="['/atelier/edit', atelier.id]" class="btn btn-warning">
+            <i class="bi bi-pencil"></i> Edit
+          </a>
+          <a routerLink="/atelier" class="btn btn-secondary">
+            <i class="bi bi-house"></i> Back to List
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

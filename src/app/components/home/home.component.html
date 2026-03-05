@@ -1,0 +1,91 @@
+<div class="home-hero">
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="badge rounded-pill text-bg-light home-pill mb-3">
+          <i class="bi bi-lightning-charge"></i> Gestion simple & rapide
+        </span>
+        <h1 class="display-5 fw-semibold mb-3">
+          Atelier Management
+          <span class="text-gradient">System</span>
+        </h1>
+        <p class="lead text-secondary mb-4">
+          Ajoute, modifie, supprime et consulte tes ateliers avec une interface claire.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a routerLink="/atelier" class="btn btn-primary btn-lg">
+            <i class="bi bi-list-check me-1"></i> Voir la liste des ateliers
+          </a>
+          <a routerLink="/atelier/add" class="btn btn-outline-primary btn-lg">
+            <i class="bi bi-plus-circle me-1"></i> Ajouter un atelier
+          </a>
+        </div>
+
+        <div class="home-hints mt-4">
+          <div class="hint">
+            <i class="bi bi-check2-circle"></i>
+            <span>CRUD complet (Create / Read / Update / Delete)</span>
+          </div>
+          <div class="hint">
+            <i class="bi bi-shield-check"></i>
+            <span>Validation de formulaire + messages d’erreur</span>
+          </div>
+          <div class="hint">
+            <i class="bi bi-plug"></i>
+            <span>API Node + MySQL (CORS activé)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card shadow-sm border-0 home-card">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-circle">
+                <i class="bi bi-collection"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">Démarrage rapide</div>
+                <div class="text-secondary small">Backend + Frontend</div>
+              </div>
+            </div>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <div class="step-title">Lancer l’API</div>
+                  <div class="step-text"><code>npm start</code> dans le dossier backend</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <div class="step-title">Lancer Angular</div>
+                  <div class="step-text"><code>npm start</code> à la racine</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <div class="step-title">Ouvrir</div>
+                  <div class="step-text"><code>http://localhost:4200</code></div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="text-secondary small">API attendue</span>
+              <span class="badge text-bg-dark"><code>http://localhost:3000/ateliers</code></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

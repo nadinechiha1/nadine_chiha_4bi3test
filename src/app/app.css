@@ -1,0 +1,16 @@
+nav.navbar {
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.18);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-size: 1.1rem;
+}
+
+main {
+  background-color: #f8fafc;
+  min-height: calc(100vh - 56px);
+}
+
+

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #f4f6f9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+nav.navbar {
+  border-bottom: 1px solid #444;
+}
+
+.table-responsive {
+  background: white;
+  border-radius: 6px;
+}
+
+/* light hover effect for tables */
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Global polish */
+.container,
+.container-fluid {
+  max-width: 1200px;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+.btn {
+  border-radius: 12px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+}
+

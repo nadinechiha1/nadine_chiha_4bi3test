@@ -1,0 +1,85 @@
+.home-hero {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(99, 102, 241, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(16, 185, 129, 0.15), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.home-pill {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home-card {
+  border-radius: 16px;
+}
+
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+.home-hints {
+  display: grid;
+  gap: 10px;
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0f172a;
+}
+
+.hint i {
+  color: #16a34a;
+}
+
+.steps {
+  display: grid;
+  gap: 14px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(2, 132, 199, 0.12);
+  color: #0369a1;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.step-title {
+  font-weight: 600;
+}
+
+.step-text {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+code {
+  font-size: 0.9em;
+}
+
+

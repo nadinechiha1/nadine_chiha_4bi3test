@@ -1,0 +1,87 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2>Add New Atelier</h2>
+
+      <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ successMessage }}
+        <button type="button" class="btn-close" (click)="successMessage = ''"></button>
+      </div>
+
+      <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ errorMessage }}
+        <button type="button" class="btn-close" (click)="errorMessage = ''"></button>
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="nom" class="form-label">Atelier Name *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nom"
+            formControlName="nom"
+            [class.is-invalid]="isFieldInvalid('nom')"
+            placeholder="e.g., Atelier Ahmed Ali"
+          />
+          <div class="invalid-feedback" *ngIf="isFieldInvalid('nom')">
+            {{ getErrorMessage('nom') }}
+          </div>
+          <small class="form-text text-muted">
+            Format: "Atelier FirstName LastName". Minimum 5 characters.
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="emailFormateur" class="form-label">Instructor Email *</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailFormateur"
+            formControlName="emailFormateur"
+            [class.is-invalid]="isFieldInvalid('emailFormateur')"
+            placeholder="instructor@example.com"
+          />
+          <div class="invalid-feedback" *ngIf="isFieldInvalid('emailFormateur')">
+            {{ getErrorMessage('emailFormateur') }}
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="nbrParticipant" class="form-label">Number of Participants *</label>
+          <input
+            type="number"
+            class="form-control"
+            id="nbrParticipant"
+            formControlName="nbrParticipant"
+            [class.is-invalid]="isFieldInvalid('nbrParticipant')"
+            placeholder="Enter number greater than 15"
+          />
+          <div class="invalid-feedback" *ngIf="isFieldInvalid('nbrParticipant')">
+            {{ getErrorMessage('nbrParticipant') }}
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="statut" class="form-label">Status</label>
+          <select class="form-control" id="statut" formControlName="statut">
+            <option [ngValue]="true">Active</option>
+            <option [ngValue]="false">Inactive</option>
+          </select>
+        </div>
+
+        <div class="d-flex gap-2">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="isLoading || form.invalid"
+          >
+            <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-2"></span>
+            {{ isLoading ? 'Creating...' : 'Create Atelier' }}
+          </button>
+          <a routerLink="/atelier" class="btn btn-secondary">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
