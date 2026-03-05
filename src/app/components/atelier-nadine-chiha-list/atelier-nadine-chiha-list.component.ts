@@ -7,13 +7,13 @@ import { AtelierService } from '../../services/atelier.service';
 import { Atelier } from '../../models/atelier.model';
 
 @Component({
-  selector: 'app-atelier-omar-ben-jannet-list',
-  templateUrl: './atelier-omar-ben-jannet-list.component.html',
-  styleUrl: './atelier-omar-ben-jannet-list.component.css',
+  selector: 'app-atelier-nadine-chiha-list',
+  templateUrl: './atelier-nadine-chiha-list.component.html',
+  styleUrl: './atelier-nadine-chiha-list.component.css',
   standalone: true,
   imports: [CommonModule, RouterModule]
 })
-export class AtelierOmarBenJannetListComponent implements OnInit, OnDestroy {
+export class AtelierNadineChihaListComponent implements OnInit, OnDestroy {
   private readonly atelierService = inject(AtelierService);
   private readonly destroy$ = new Subject<void>();
 

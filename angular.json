@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Omar_Ben_Jannet": {
+    "Nadine_Chiha": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -75,10 +75,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Omar_Ben_Jannet:build:production"
+              "buildTarget": "Nadine_Chiha:build:production"
             },
             "development": {
-              "buildTarget": "Omar_Ben_Jannet:build:development"
+              "buildTarget": "Nadine_Chiha:build:development"
             }
           },
           "defaultConfiguration": "development"

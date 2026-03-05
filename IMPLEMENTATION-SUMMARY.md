@@ -1,6 +1,6 @@
 # Implementation Summary - Atelier CRUD Management System
 
-**Project:** Omar Ben Jannet - Angular CRUD Application  
+**Project:** Nadine Chiha - Angular CRUD Application  
 **Framework:** Angular 21  
 **Date Completed:** March 5, 2026  
 **Status:** ✅ COMPLETE - Ready for Deployment
@@ -474,4 +474,4 @@ You now have a **complete, production-ready Angular CRUD application** for the A
 **Created:** March 5, 2026  
 **Framework:** Angular 21  
 **Status:** ✅ Complete and Ready for Use  
-**Developer:** Omar Ben Jannet  
+**Developer:** Nadine Chiha  

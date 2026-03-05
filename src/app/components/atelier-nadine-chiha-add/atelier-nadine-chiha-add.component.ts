@@ -8,13 +8,13 @@ import { AtelierService } from '../../services/atelier.service';
 import { AtelierValidators } from '../../validators/atelier.validators';
 
 @Component({
-  selector: 'app-atelier-omar-ben-jannet-add',
-  templateUrl: './atelier-omar-ben-jannet-add.component.html',
-  styleUrl: './atelier-omar-ben-jannet-add.component.css',
+  selector: 'app-atelier-nadine-chiha-add',
+  templateUrl: './atelier-nadine-chiha-add.component.html',
+  styleUrl: './atelier-nadine-chiha-add.component.css',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, RouterModule]
 })
-export class AtelierOmarBenJannetAddComponent implements OnInit, OnDestroy {
+export class AtelierNadineChihaAddComponent implements OnInit, OnDestroy {
   private readonly atelierService = inject(AtelierService);
   private readonly router = inject(Router);
   private readonly fb = inject(FormBuilder);

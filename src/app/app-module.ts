@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { HomeComponent } from './components/home/home.component';
-import { AtelierOmarBenJannetListComponent } from './components/atelier-omar-ben-jannet-list/atelier-omar-ben-jannet-list.component';
-import { AtelierOmarBenJannetAddComponent } from './components/atelier-omar-ben-jannet-add/atelier-omar-ben-jannet-add.component';
-import { AtelierOmarBenJannetEditComponent } from './components/atelier-omar-ben-jannet-edit/atelier-omar-ben-jannet-edit.component';
-import { AtelierOmarBenJannetDetailComponent } from './components/atelier-omar-ben-jannet-detail/atelier-omar-ben-jannet-detail.component';
+import { AtelierNadineChihaListComponent } from './components/atelier-nadine-chiha-list/atelier-nadine-chiha-list.component';
+import { AtelierNadineChihaAddComponent } from './components/atelier-nadine-chiha-add/atelier-nadine-chiha-add.component';
+import { AtelierNadineChihaEditComponent } from './components/atelier-nadine-chiha-edit/atelier-nadine-chiha-edit.component';
+import { AtelierNadineChihaDetailComponent } from './components/atelier-nadine-chiha-detail/atelier-nadine-chiha-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +19,10 @@ import { AtelierOmarBenJannetDetailComponent } from './components/atelier-omar-b
     AppRoutingModule,
     HttpClientModule,
     HomeComponent,
-    AtelierOmarBenJannetListComponent,
-    AtelierOmarBenJannetAddComponent,
-    AtelierOmarBenJannetEditComponent,
-    AtelierOmarBenJannetDetailComponent
+    AtelierNadineChihaListComponent,
+    AtelierNadineChihaAddComponent,
+    AtelierNadineChihaEditComponent,
+    AtelierNadineChihaDetailComponent
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

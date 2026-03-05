@@ -1,16 +1,26 @@
 nav.navbar {
-  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.18);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
 }
 
 .navbar-brand {
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: white !important;
+  text-transform: uppercase;
 }
 
 main {
-  background-color: #f8fafc;
+  background: transparent;
   min-height: calc(100vh - 56px);
+  padding: 30px 20px;
+}
+
+.navbar-text {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white !important;
 }
 
 
